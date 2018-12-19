@@ -7,7 +7,7 @@ export default class My extends Component{
 		return(
 			<div>
 				<div id="header">
-					<div className="return"><NavLink to="/home/index">返回</NavLink></div>
+					<div className="return"><NavLink to="/home">返回</NavLink></div>
 				</div>
 			</div>
 		)

@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import {HashRouter,Route,Link,Switch,NavLink,Redirect} from "react-router-dom";
-import Home from "./components/home";
-import Index from "./components/index";
-import Buy from "./components/buy";
-import Shop from "./components/shop";
-import Find from "./components/find";
-import My from "./components/my";
+import Home from "./components/home/home";
+import Buy from "./components/buy/buy";
+import Shop from "./components/shop/shop";
+import Find from "./components/find/find";
+import My from "./components/my/my";
 
 
 
@@ -16,13 +15,16 @@ class App extends Component {
 			
       <HashRouter>
      		 <div>
+     		 <Switch>
 		   			<Route path="/home" component={Home}/>
-      			<Route path="/home/index"  component={Index}/>
-      			<Route path="/home/buy" component={Buy}/>
-      			<Route path="/home/shop" component={Shop}/>
-      			<Route path="/home/find" component={Find}/>
+      			<Route path="/buy" component={Buy}/>
+      			<Route path="/shop" component={Shop}/>
+      			<Route path="/find" component={Find}/>
+      		
       			<Route path="/my" component={My}/>
-      			<Redirect path="/" to="/home/index"/>
+      		
+      			<Redirect path="/" to="/home"/>
+      		</Switch>
       	</div>	
       </HashRouter>
     
