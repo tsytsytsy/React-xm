@@ -9,18 +9,34 @@
 	align-items: center;
 }
 #header>ul{
+	height: 100%;
 	width: 70%;
 	display: flex;
 	padding-right:0.2rem;
+	align-items: center;
 }
 #header>ul>li{
+	align-items: center;
+	height: 100%;
 	flex:1;
 	display: flex;
 	justify-content: flex-end;
 }
 #header>ul>li>a{
+	display: flex;
+	align-items: center;
+	height: 100%;
 	color: #bbb;
 }
+#header>ul>li>.active{
+	color: #fff;
+	border-bottom: 0.05rem solid #fff;
+}
+
+
+
+
+
 #header>.return>a{
 	color: #fff;
 }
